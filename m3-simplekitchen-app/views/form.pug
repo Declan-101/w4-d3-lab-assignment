@@ -1,33 +1,39 @@
 extends layout
 
 block content
-    -data = data || {}
+    - data = data || {}
+
+    h2 Registration Form
+    p Fill out the form below to register.
 
     if errors
         ul.my-errors
-        for error in errors
-            li= error.msg
-    form(action="." method="POST" class="form-registration")
-        label(for="name") Name:
-        input(
-            type="text"
-            id="name"
-            name="name"
-            class="form-control"
+            each error in errors
+                li= error.msg
+
+    form.form-registration(action='/register' method='POST')
+        label(for='name') Name:
+
+        input.form-control(
+            type='text'
+            id='name'
+            name='name'
             value=data.name
         )
 
-        label(for="email") Email:
-        input(
-            type="email"
-            id="email"
-            name="email"
-            class="form-control"
+        label(for='email') Email:
+
+        input.form-control(
+            type='email'
+            id='email'
+            name='email'
             value=data.email
         )
 
-        input(
-            type="submit" 
-            value="Submit"
-            class="btn btn-lg btn-primary btn-block"
+        input.btn.btn-lg.btn-primary.btn-block(
+            type='submit'
+            value='Submit'
         )
+
+    p
+        a(href='/') Back to Simple Kitchen

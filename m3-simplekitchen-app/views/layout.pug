@@ -1,12 +1,25 @@
 doctype html
 html
   head
-    title= `${title}`
+    title= title || 'Simple Kitchen'
+
+    link(rel='preconnect', href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap', rel='stylesheet')
+
     link(rel='stylesheet', href='/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/css/styles.css')
+    link(rel='stylesheet', href='/css/form.css')
 
   body
+    header
+      nav
+        ul
+          li
+            a(href='/') Home
+          li |
+          li
+            a(href='/register') Register
+
     div.container.listing-reg
-      h1 My Amazing App
+      h1 Simple Kitchen
 
       block content

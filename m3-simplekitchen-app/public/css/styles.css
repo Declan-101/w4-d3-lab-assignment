@@ -1,21 +1,15 @@
-/* Nesting */
-/* SCSS */
-nav {
-  font-size: 1em;
-  font-font-weight: bold;
-  float: left;
-}
 nav ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 nav ul li {
-  float: left;
-  margin: 0 5px 0 0;
-  color: white;
+  display: inline;
+  margin-right: 10px;
 }
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 nav ul li a:hover {
   text-decoration: underline;
@@ -29,7 +23,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, Sans-Serif;
-  background: #daaa0e;
+  background: rgb(218, 170, 14);
 }
 
 header {
@@ -39,7 +33,7 @@ header {
 }
 
 main {
-  background: white;
+  background: rgb(255, 255, 255);
   width: 1350px;
   min-height: 535px;
   padding: 1.5%;
@@ -56,13 +50,13 @@ main #intro-text {
   width: 550px;
   height: 407px;
   float: left;
-  background: #d4d5d8;
+  background: rgb(212, 213, 216);
   text-align: center;
   padding-top: 8em;
 }
 main #intro-text h3 {
   font-size: 2em;
-  color: #313130;
+  color: rgb(49, 49, 48);
 }
 main #intro-text span {
   font-family: "Sacramento", cursive;
@@ -77,15 +71,15 @@ footer {
 }
 
 button, .submit-buttton {
-  color: white;
+  color: rgb(255, 255, 255);
   width: 100px;
   height: 40px;
-  background: #daaa0e;
+  background: rgb(218, 170, 14);
   margin-top: 2em;
 }
 
 .submit-buttton {
-  border: 1px #313130;
+  border: 1px rgb(49, 49, 48);
 }
 
 /*# sourceMappingURL=styles.css.map */
