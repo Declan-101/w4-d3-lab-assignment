@@ -12,22 +12,42 @@ block content
                 li= error.msg
 
     form.form-registration(action='/register' method='POST')
-        label(for='name') Name:
 
+        label(for='name') Name:
         input.form-control(
             type='text'
             id='name'
             name='name'
             value=data.name
+            required
         )
 
         label(for='email') Email:
-
         input.form-control(
             type='email'
             id='email'
             name='email'
             value=data.email
+            required
+        )
+
+        label(for='username') Username:
+        input.form-control(
+            type='text'
+            id='username'
+            name='username'
+            value=data.username
+            required
+        )
+
+        label(for='password') Password:
+        input.form-control(
+            type='password'
+            id='password'
+            name='password'
+            minlength='8'
+            autocomplete='new-password'
+            required
         )
 
         input.btn.btn-lg.btn-primary.btn-block(
