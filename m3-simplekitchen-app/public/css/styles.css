@@ -15,6 +15,79 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+.listing-reg h1 {
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+/* Registration form and errors */
+.form-registration {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-registration input {
+  width: 100%;
+  margin: 0 0 10px;
+}
+.form-registration .btn {
+  flex: 1 0 100%;
+}
+
+.my-errors {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  color: #333;
+  font-size: 1.2rem;
+  display: table;
+}
+.my-errors li {
+  margin: 0 0 1rem;
+}
+.my-errors li:before {
+  content: "! Error : ";
+  color: #f00;
+  font-weight: bold;
+}
+
+/* Registration table */
+.listing-table {
+  width: 100%;
+}
+.listing-table th,
+.listing-table td {
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+.listing-table th {
+  background: #000;
+  color: #fff;
+}
+.listing-table td:first-child,
+.listing-table th:first-child {
+  border-right: 1px solid #666;
+}
+
+/* Thank you page */
+.thank-you {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-control {
+  display: block;
+  padding: 0.6rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+main > h2, main > p, .thank-you {
+  text-align: center;
+}
+
 /* Variables */
 html {
   font-size: 1em;
@@ -79,7 +152,9 @@ button, .submit-buttton {
 }
 
 .submit-buttton {
-  border: 1px rgb(49, 49, 48);
+  border: 1px solid rgb(49, 49, 48);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
-
-/*# sourceMappingURL=styles.css.map */

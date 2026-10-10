@@ -1,5 +1,6 @@
 @import "colors.scss";
 @import "nav.scss";
+@import "form.scss";
 
 /* Variables */
 $fontFamily1: Arial, Helvetica, Sans-Serif;
@@ -80,5 +81,9 @@ button {
 }
 .submit-buttton {
   @extend button;
-  border: 1px $color3;
+  border: 1px solid $color3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
